@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background: linear-gradient(180deg, #fbf8fe 0%, #efecf6 100%);
+        min-height: max(884px, 100dvh);
+    }
+}
+
+@layer utilities {
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass-nav {
+        backdrop-filter: blur(24px);
+    }
+    .tonal-carving-no-borders {
+        border: none !important;
+    }
+}
